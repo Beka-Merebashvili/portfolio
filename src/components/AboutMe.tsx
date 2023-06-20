@@ -1,6 +1,8 @@
 import SocialMedia from "./SocialMedia";
 import styled from "styled-components";
 import myPhoto from "../assets/images/main-character.jpg";
+import circle from "../assets/images/pattern-circle.svg"
+import pattern from "../assets/images/pattern-rings.svg"
 
 export default function AboutMe() {
   return (
@@ -19,6 +21,8 @@ export default function AboutMe() {
         to life!
       </p>
       <p className="contact">contact me</p>
+      <img className="circle" src={circle} alt="circle" />
+      <img className="ring" src={pattern} alt="" />
     </Container>
   );
 }
@@ -27,6 +31,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   .imgBox {
     width: 174px;
     height: 240px;
@@ -64,5 +69,15 @@ const Container = styled.div`
     color: #ffffff;
     text-decoration: underline 2px #4ee1a0;
     margin: 24px 0 80px 0;
+  }
+  .circle {
+    position: absolute;
+    top: 220px;
+    right: -64px;
+  }
+  .ring {
+    position: absolute;
+    top: 100px;
+    left: -380px;
   }
 `;
