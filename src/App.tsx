@@ -1,5 +1,6 @@
 import Globalstyles from "./styled-components/GlobalStyles"
-import Header from "./components/Header"
+import AboutMe from "./components/AboutMe"
+import Experience from "./components/Experience"
 
 function App() {
    
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
     <Globalstyles />
-    <Header />
+    <AboutMe />
+    <Experience />
     </>
   )
 }
