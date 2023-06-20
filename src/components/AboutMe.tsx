@@ -1,6 +1,6 @@
 import SocialMedia from "./SocialMedia";
 import styled from "styled-components";
-import myPhoto from "../assets/images/main-character.jpg";
+import myPhoto from "../assets/images/my-photo.jpg";
 import circle from "../assets/images/pattern-circle.svg"
 import pattern from "../assets/images/pattern-rings.svg"
 
@@ -32,6 +32,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: hidden;
   .imgBox {
     width: 174px;
     height: 240px;
@@ -77,7 +78,7 @@ const Container = styled.div`
   }
   .ring {
     position: absolute;
-    top: 100px;
-    left: -380px;
+    top: 110px;
+    left: -370px;
   }
 `;
