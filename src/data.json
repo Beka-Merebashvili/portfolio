@@ -1,3 +1,9 @@
 [
-    {"title" : "ragaca" , "img" : "./images/preview.jpg" }
+  {
+    "img": "./images/Github-user-search-app-preview.jpg",
+    "title": "Github user search app",
+    "lenguages": "react , typescript , restapi",
+    "repoUrl" : "https://github.com/Beka-Merebashvili/Github-user-search-app",
+    "liveUrl" : "https://github-user-search-app-coral.vercel.app"
+  }
 ]

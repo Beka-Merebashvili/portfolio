@@ -28,6 +28,7 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 80px 0;
   .line,
   .line2 {
     width: 88%;

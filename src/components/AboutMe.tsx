@@ -1,5 +1,6 @@
 import SocialMedia from "./SocialMedia";
 import styled from "styled-components";
+import UnderLine from "../styled-components/UnderLine";
 import myPhoto from "../assets/images/my-photo.jpg";
 import circle from "../assets/images/pattern-circle.svg"
 import pattern from "../assets/images/pattern-rings.svg"
@@ -20,7 +21,7 @@ export default function AboutMe() {
         through clean and efficient code. Let's collaborate and bring your ideas
         to life!
       </p>
-      <p className="contact">contact me</p>
+      <UnderLine>contact me</UnderLine>
       <img className="circle" src={circle} alt="circle" />
       <img className="ring" src={pattern} alt="" />
     </Container>
@@ -32,7 +33,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   .imgBox {
     width: 174px;
     height: 240px;
@@ -60,16 +61,7 @@ const Container = styled.div`
     text-align: center;
     color: #d9d9d9;
     width: 342px;
-  }
-  .contact {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 2.28571px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: underline 2px #4ee1a0;
-    margin: 24px 0 80px 0;
+    margin-bottom: 24px;
   }
   .circle {
     position: absolute;
