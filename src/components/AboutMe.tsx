@@ -21,7 +21,7 @@ export default function AboutMe() {
         through clean and efficient code. Let's collaborate and bring your ideas
         to life!
       </p>
-      <UnderLine>contact me</UnderLine>
+      <UnderLine href="#1">contat me</UnderLine>
       <img className="circle" src={circle} alt="circle" />
       <img className="ring" src={pattern} alt="" />
     </Container>

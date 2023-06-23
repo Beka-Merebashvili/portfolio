@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const UnderLine = styled.p`
+const UnderLine = styled.a`
   font-weight: 700;
   font-size: 16px;
   line-height: 26px;

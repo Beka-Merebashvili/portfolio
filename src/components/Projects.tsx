@@ -7,7 +7,7 @@ export default function Projects() {
        <ProjectsContainer>
         <div className="section">
             <p className="projectTitle">Projects</p>
-            <UnderLine>contact me</UnderLine>
+            <UnderLine href="#1">contact me</UnderLine>
         </div>
             {data.map((data , index)=> (
                 <div className="projects" key={index}>
@@ -15,8 +15,8 @@ export default function Projects() {
                     <p className="title">{data.title}</p>
                     <p className="lenguages">{data.lenguages}</p>
                     <div className="links">
-                    <UnderLine><a target="blank" href={data.repoUrl}>VIEW PROJECT</a></UnderLine>
-                    <UnderLine><a target="blank" href={data.liveUrl}>VIEW CODE</a></UnderLine>
+                    <UnderLine target="blank" href={data.liveUrl}>VIEW PROJECT</UnderLine>
+                    <UnderLine target="blank" href={data.repoUrl}>VIEW CODE</UnderLine>
                     </div>
                 </div>
             ))}
