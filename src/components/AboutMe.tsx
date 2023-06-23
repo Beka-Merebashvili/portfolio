@@ -33,7 +33,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   .imgBox {
     width: 174px;
     height: 240px;
