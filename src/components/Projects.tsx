@@ -31,6 +31,7 @@ const ProjectsContainer = styled.div`
     align-items: center;
     .section {
         display: flex;
+        align-items: center;
         gap: 70px;
         margin-bottom: 40px;
     }

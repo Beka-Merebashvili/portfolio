@@ -8,15 +8,8 @@ const UnderLine = styled.p`
   text-transform: uppercase;
   color: #ffffff;
   position: relative;
-  &::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;  
-  left: 0;
-  width: 100%;
-  height: 2px; 
-  background-color: #4ee1a0;  
-}
+  border-bottom: 2px solid #4ee1a0;
+  padding-bottom: 6px;
 `;
 
 export default UnderLine;
