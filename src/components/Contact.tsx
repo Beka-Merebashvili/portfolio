@@ -1,7 +1,15 @@
 import styled from "styled-components";
+import { useForm, SubmitHandler } from "react-hook-form"
 import SocialMedia from "./SocialMedia";
 
 export default function Contact() {
+
+  const {register, handleSubmit, watch, formState:{errors}} = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    console.log(data);
+  }
+
   return (
     <ContactContainer id="1">
       <div className="description">
@@ -11,19 +19,19 @@ export default function Contact() {
           fill in the form, and I'll get back to you as soon as possible.
         </p>
       </div>
-      <ContactForm>
+      <ContactForm onSubmit={handleSubmit(onSubmit)}>
       <div className="name">
         <input
           type="text"
-          className="nameInpunt"
           placeholder="NAME"
+          {...register("name")}
         />
       </div>
       <div className="email">
         <input
           type="text"
-          className="nameInpunt"
           placeholder="EMAIL"
+          {...register("email")}
         />
       </div>
       <div className="name">
@@ -31,6 +39,7 @@ export default function Contact() {
           type="text"
           className="messageInpunt"
           placeholder="MESSAGE"
+          {...register("message")}
         />
       </div>
       <button>SEND MESSAGE</button>

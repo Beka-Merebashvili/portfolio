@@ -61,7 +61,7 @@ const ProjectsContainer = styled.div`
         font-weight: 500;
         line-height: 28px;
         color: #ffffff;
-        /* text-transform: uppercase; */
+        letter-spacing: 2.8px;
     }
     .links {
         display: flex;
