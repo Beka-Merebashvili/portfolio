@@ -1,14 +1,18 @@
 import styled from "styled-components";
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm, SubmitHandler } from "react-hook-form";
 import SocialMedia from "./SocialMedia";
+import errorIcon from "../assets/images/error-icon.svg";
 
 export default function Contact() {
-
-  const {register, handleSubmit, watch, formState:{errors}} = useForm<Inputs>();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     console.log(data);
-  }
+  };
 
   return (
     <ContactContainer id="1">
@@ -20,29 +24,50 @@ export default function Contact() {
         </p>
       </div>
       <ContactForm onSubmit={handleSubmit(onSubmit)}>
-      <div className="name">
-        <input
-          type="text"
-          placeholder="NAME"
-          {...register("name")}
-        />
-      </div>
-      <div className="email">
-        <input
-          type="text"
-          placeholder="EMAIL"
-          {...register("email")}
-        />
-      </div>
-      <div className="name">
-        <input
-          type="text"
-          className="messageInpunt"
-          placeholder="MESSAGE"
-          {...register("message")}
-        />
-      </div>
-      <button>SEND MESSAGE</button>
+        <div className="inputWrapper">
+          <input
+            type="text"
+            placeholder="NAME"
+            {...register("name", {
+              required: "Can't be blank",
+              minLength: {
+                value: 2,
+                message: "The field must contain at least 2 letters",
+              },
+            })}
+          />
+          {errors.name && <p className="errorMessage">{errors.name.message}</p>}
+          {errors.name && (<img className="errorIcon" src={errorIcon} alt="errorIcon" /> )}
+        </div>
+        <div className="inputWrapper">
+          <input
+            type="text"
+            placeholder="EMAIL"
+            {...register("email", {
+              required: "Can't be blank",
+              pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Sorry, invalid format here",
+              },
+            })}
+          />
+          {errors.email && (
+            <p className="errorMessage">{errors.email.message}</p>
+          )}
+          {errors.email && ( <img className="errorIcon" src={errorIcon} alt="errorIcon" /> )}
+        </div>
+        <div className="inputWrapper">
+          <input
+            type="text"
+            className="messageInpunt"
+            placeholder="MESSAGE"
+            {...register("message", { required: "Can't be blank" })}
+          />
+          {errors.message && (
+            <p className="errorMessage">{errors.message.message}</p>
+          )}
+        </div>
+        <button>SEND MESSAGE</button>
       </ContactForm>
       <hr />
       <SocialMedia />
@@ -74,7 +99,7 @@ const ContactContainer = styled.div`
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    color: #D9D9D9;
+    color: #d9d9d9;
     text-align: center;
     width: 342px;
     margin-top: 20px;
@@ -87,21 +112,23 @@ const ContactContainer = styled.div`
   }
 `;
 
-
-
 const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 32px;
   margin: 50px 0 86px 0;
+  .inputWrapper {
+    position: relative;
+  }
   input {
     width: 342px;
     height: 43px;
+    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: -0.22px ;
+    letter-spacing: -0.22px;
     background-color: #242424;
     border: none;
     border-bottom: 1px solid #ffffff;
@@ -111,4 +138,33 @@ const ContactForm = styled.form`
   .messageInpunt {
     height: 107px;
   }
-`
+  .errorMessage {
+    color: #ff6f5b;
+    font-size: 12px;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+  }
+  .errorIcon {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+  button {
+    background-color: #242424;
+    border: none;
+    border-bottom: 2px solid #4ee1a0;
+    padding-bottom: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.286px;
+    margin-left: 186px;
+  }
+`;
