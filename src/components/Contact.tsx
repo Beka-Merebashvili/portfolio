@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useForm, SubmitHandler } from "react-hook-form";
 import SocialMedia from "./SocialMedia";
+import pattern from "../assets/images/pattern-rings.svg"
 import errorIcon from "../assets/images/error-icon.svg";
 
 export default function Contact() {
@@ -69,6 +70,7 @@ export default function Contact() {
         </div>
         <button>SEND MESSAGE</button>
       </ContactForm>
+      <img className="rings" src={pattern} alt="" />
       <hr />
       <SocialMedia />
     </ContactContainer>
@@ -83,6 +85,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  position: relative;
   .description {
     display: flex;
     flex-direction: column;
@@ -103,6 +106,11 @@ const ContactContainer = styled.div`
     text-align: center;
     width: 342px;
     margin-top: 20px;
+  }
+  .rings {
+    position: absolute;
+    bottom: 270px;
+    left: -250px;
   }
   hr {
     width: 342px;

@@ -22,7 +22,7 @@ export default function Experience() {
       ))}
       <hr className="line2" />
       <div className="rings">
-      <img src={pattern} alt="" />
+      <img src={pattern} alt="rings" />
       </div>
     </StyledDiv>
   );
@@ -34,7 +34,6 @@ const StyledDiv = styled.div`
   align-items: center;
   margin: 80px 0;
   position: relative;
- 
   .line,
   .line2 {
     width: 88%;
@@ -74,5 +73,9 @@ const StyledDiv = styled.div`
     right: 0;
     bottom: -60px;
     overflow: hidden;
+  }
+
+  @media only screen and (min-width: 768px) {
+     
   }
 `;

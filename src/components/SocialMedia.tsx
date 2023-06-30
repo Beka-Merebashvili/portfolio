@@ -44,4 +44,17 @@ const SocialNavigation = styled.div`
     align-items: center;
     gap: 10px;
  }
+
+ @media only screen and (min-width: 768px){
+  width: 92%;
+  flex-direction: row;
+  justify-content: space-between;
+  h2 {
+    font-size: 32px;
+    letter-spacing: -0.44px;
+  }
+  .navigation {
+    gap: 16px;
+  }
+ }
 `

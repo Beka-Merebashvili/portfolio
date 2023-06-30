@@ -73,4 +73,39 @@ const Container = styled.div`
     top: 110px;
     left: -370px;
   }
+
+
+  @media only screen and (min-width: 768px){
+    align-items: flex-start;
+    padding-left: 32px;
+    .imgBox {
+      width: 322px;
+      height: 600px;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+    .name {
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 82px;
+      text-align: start;
+      letter-spacing: -2.045px;
+      width: 440px;
+      margin-left: 0;
+    }
+    .aboutMe {
+      font-size: 18px;
+      line-height: 28px;
+      text-align: start;
+      width: 400px;
+    }
+    .ring {
+      top: 70px;
+      left: -300px;
+    }
+    .circle {
+      top: 300px;
+    }
+  }
 `;
