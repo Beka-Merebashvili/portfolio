@@ -2,14 +2,14 @@ import styled from "styled-components";
 import githubIcon from "../assets/images/icon-github.svg";
 import facebookIcon from "../assets/images/icon-facebook.svg";
 import linkedinIcon from "../assets/images/icon-linkedin.svg";
-import twitterIcon from "../assets/images/icon-twitter.svg";
+import gmailIcon from "../assets/images/gmail.icon.svg";
 
 export default function SocialMedia() {
   const socialMediaLinks = [
     { name: "GitHub", icon: githubIcon, url: "https://github.com/Beka-Merebashvili" },
     { name: "Facebook", icon: facebookIcon, url: "https://www.facebook.com/beqa.merebashvili.73" },
-    { name: "LinkedIn", icon: linkedinIcon, url: "https://www.linkedin.com/in/beka-merebashvili-a04554248/" },
-    { name: "Twitter", icon: twitterIcon, url: "https://twitter.com/merebashvili99" },
+    { name: "LinkedIn", icon: linkedinIcon, url: "https://www.linkedin.com/in/beka-merebashvili/" },
+    { name: "Gmail", icon: gmailIcon, url: "https://myaccount.google.com/u/2/?tab=kk" },
   ];
   return (
     <SocialNavigation>
@@ -41,6 +41,7 @@ const SocialNavigation = styled.div`
  }
  .navigation {
     display: flex;
+    align-items: center;
     gap: 10px;
  }
 `
