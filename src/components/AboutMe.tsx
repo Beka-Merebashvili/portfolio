@@ -13,7 +13,7 @@ export default function AboutMe() {
         <img src={myPhoto} alt="" />
       </div>
       <p className="name">
-        Nice to meet you! I'm <span>Beka Merbashvili</span>
+        Nice to meet you! I'm <span>Beka Merebashvili</span>
       </p>
       <p className="aboutMe">
         I'm a front-end developer.With a passion for creating visually appealing

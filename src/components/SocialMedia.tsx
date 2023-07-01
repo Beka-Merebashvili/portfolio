@@ -9,7 +9,7 @@ export default function SocialMedia() {
     { name: "GitHub", icon: githubIcon, url: "https://github.com/Beka-Merebashvili" },
     { name: "Facebook", icon: facebookIcon, url: "https://www.facebook.com/beqa.merebashvili.73" },
     { name: "LinkedIn", icon: linkedinIcon, url: "https://www.linkedin.com/in/beka-merebashvili/" },
-    { name: "Gmail", icon: gmailIcon, url: "https://myaccount.google.com/u/2/?tab=kk" },
+    { name: "Gmail", icon: gmailIcon, url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnZwjFRXWgwbvCgXPGGpbTKfsKqzNQRJbDSTRSLdLMTKSlZRNddhFPxtCvbcvTFLfVHQd" },
   ];
   return (
     <SocialNavigation>

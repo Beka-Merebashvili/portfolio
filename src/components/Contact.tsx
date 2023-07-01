@@ -58,9 +58,8 @@ export default function Contact() {
           {errors.email && ( <img className="errorIcon" src={errorIcon} alt="errorIcon" /> )}
         </div>
         <div className="inputWrapper">
-          <input
-            type="text"
-            className="messageInpunt"
+          <textarea
+            className="message"
             placeholder="MESSAGE"
             {...register("message", { required: "Can't be blank" })}
           />
@@ -129,7 +128,7 @@ const ContactForm = styled.form`
   .inputWrapper {
     position: relative;
   }
-  input {
+  input , textarea {
     width: 342px;
     height: 43px;
     color: #ffffff;
@@ -143,7 +142,7 @@ const ContactForm = styled.form`
     outline: none;
     padding-left: 24px;
   }
-  .messageInpunt {
+  .message {
     height: 107px;
   }
   .errorMessage {
