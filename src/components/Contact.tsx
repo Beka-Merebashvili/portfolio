@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <ContactContainer id="1">
       <div className="description">
-        <h2>Contact</h2>
+        <h2 className="contact">Contact</h2>
         <p>
           I would love to hear about your project and how I could help. Please
           fill in the form, and I'll get back to you as soon as possible.
@@ -90,7 +90,7 @@ const ContactContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
-  h2 {
+ .contact {
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -116,6 +116,26 @@ const ContactContainer = styled.div`
     height: 1px;
     background-color: #ffffff;
     margin-bottom: 20px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .contact{
+      font-size: 72px;
+line-height: 72px;
+letter-spacing: -2.045px;
+    }
+    .description p {
+      font-size: 18px;
+      line-height: 28px;
+      width: 435px;
+    }
+    .rings {
+      bottom: 150px;
+      left: -350px;
+    }
+    hr {
+      width: 94%;
+    }
   }
 `;
 
@@ -173,5 +193,14 @@ const ContactForm = styled.form`
     line-height: 26px;
     letter-spacing: 2.286px;
     margin-left: 186px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    input , textarea {
+      width: 445px;
+    }
+    button {
+      margin-left: 282px;
+    }
   }
 `;

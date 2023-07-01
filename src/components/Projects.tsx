@@ -9,6 +9,7 @@ export default function Projects() {
             <p className="projectTitle">Projects</p>
             <UnderLine href="#1">contact me</UnderLine>
         </div>
+        <div className="projectsWrapper">
             {data.map((data , index)=> (
                 <div className="projects" key={index}>
                     <img src={data.img} alt="" />
@@ -20,6 +21,7 @@ export default function Projects() {
                     </div>
                 </div>
             ))}
+            </div>
         </ProjectsContainer>
     ) ;
 }
@@ -74,5 +76,18 @@ const ProjectsContainer = styled.div`
         line-height: 26px;
         color: #ffffff;
         letter-spacing: 2.286px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .section {
+            width: 706px;
+            justify-content: space-between;
+        }
+         .projectsWrapper {
+            width: 736px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+         }
     }
 `

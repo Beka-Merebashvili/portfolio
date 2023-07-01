@@ -14,12 +14,14 @@ export default function Experience() {
   return (
     <StyledDiv>
       <hr className="line" />
+      <div className="experienceWrapper">
       {experience.map((item, index) => (
         <div className="wrapper" key={index}>
           <h3>{item.title}</h3>
           <p>{item.info}</p>
         </div>
       ))}
+      </div>
       <hr className="line2" />
       <div className="rings">
       <img src={pattern} alt="rings" />
@@ -76,6 +78,33 @@ const StyledDiv = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-     
+    /* align-items: flex-start;
+    padding-left: 32px; */
+     .experienceWrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 530px;
+     }
+     .wrapper {
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 40px;
+     }
+     h3 {
+      font-size: 48px;
+      line-height: 56px;
+      letter-spacing: -1.5px;
+     }
+     p {
+      font-size: 18px; 
+      line-height: 28px;
+     }
+     .line {
+      width: 96%;
+     }
+     .line2 {
+      display: none;
+     }
   }
 `;
