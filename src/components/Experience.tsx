@@ -107,4 +107,13 @@ const StyledDiv = styled.div`
       display: none;
      }
   }
+
+  @media only screen and (min-width: 1440px) {
+    .experienceWrapper {
+      width: 678px;
+    }
+    .line {
+      width: 80%;
+    }
+  }
 `;
