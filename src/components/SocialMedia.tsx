@@ -57,4 +57,10 @@ const SocialNavigation = styled.div`
     gap: 16px;
   }
  }
+
+ @media only screen and (min-width: 1440px) {
+  .navigation {
+    gap: 24px;
+  }
+ }
 `

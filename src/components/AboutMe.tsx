@@ -108,4 +108,30 @@ const Container = styled.div`
       top: 300px;
     }
   }
+
+
+  @media only screen and (min-width: 1440px) {
+    padding: 0 165px ;
+    .imgBox {
+      width: 445px;
+      height: 720px;
+      right: 165px;
+    }
+    .name {
+      font-size: 88px;
+      line-height: 88px;
+      letter-spacing: -2.5px;
+      width: 700px;
+    }
+    .aboutMe {
+      width: 445px;
+    }
+    .circle {
+      top: 390px;
+      right: 545px;
+    }
+    .ring {
+      left: -140px;
+    }
+  }
 `;
