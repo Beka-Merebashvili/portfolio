@@ -8,8 +8,8 @@ import { saveAs } from "file-saver";
 
 export default function AboutMe() {
   const handleDownload = () => {
-    const fileUrl = '/path/to/your/cv.pdf'; // Replace with the actual path to your CV file
-    const fileName = 'your_cv.pdf'; // Replace with the desired file name
+    const fileUrl = "./docs/Beka_Merebashvili.pdf";  
+    const fileName =  "Beka Merebasvhili";  
     saveAs(fileUrl, fileName);
   };
 
@@ -30,6 +30,9 @@ export default function AboutMe() {
         to life!
       </p>
       <UnderLine href="#1">contat me</UnderLine>
+      <button onClick={handleDownload}>
+      Download CV
+    </button>
       <img className="circle" src={circle} alt="circle" />
       <img className="ring" src={pattern} alt="" />
     </Container>
@@ -70,6 +73,14 @@ const Container = styled.div`
     color: #d9d9d9;
     width: 342px;
     margin-bottom: 24px;
+  }
+  button {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
   }
   .circle {
     position: absolute;
