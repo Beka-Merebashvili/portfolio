@@ -4,8 +4,16 @@ import UnderLine from "../styled-components/UnderLine";
 import myPhoto from "../assets/images/my-photo.jpg";
 import circle from "../assets/images/pattern-circle.svg"
 import pattern from "../assets/images/pattern-rings.svg"
+import { saveAs } from "file-saver";
 
 export default function AboutMe() {
+  const handleDownload = () => {
+    const fileUrl = '/path/to/your/cv.pdf'; // Replace with the actual path to your CV file
+    const fileName = 'your_cv.pdf'; // Replace with the desired file name
+    saveAs(fileUrl, fileName);
+  };
+
+
   return (
     <Container>
       <SocialMedia />
