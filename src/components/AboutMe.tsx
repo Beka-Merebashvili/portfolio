@@ -4,6 +4,7 @@ import UnderLine from "../styled-components/UnderLine";
 import myPhoto from "../assets/images/my-photo.jpg";
 import circle from "../assets/images/pattern-circle.svg";
 import pattern from "../assets/images/pattern-rings.svg";
+import donwloadIcon from "../assets/images/download-icon.svg"
 import { saveAs } from "file-saver";
 
 export default function AboutMe() {
@@ -29,7 +30,7 @@ export default function AboutMe() {
         to life!
       </p>
       <UnderLine href="#1">contat me</UnderLine>
-      <button onClick={handleDownload}>Download CV</button>
+      <button onClick={handleDownload}>Download CV <img src={donwloadIcon} alt="" /> </button>
       <img className="circle" src={circle} alt="circle" />
       <img className="ring" src={pattern} alt="" />
     </Container>
@@ -78,6 +79,9 @@ const Container = styled.div`
     border: none;
     font-size: 14px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .circle {
     position: absolute;
@@ -115,6 +119,11 @@ const Container = styled.div`
       text-align: start;
       width: 400px;
     }
+    button {
+      position: absolute;
+      top: 514px;
+      left: 370px;
+    }
     .ring {
       top: 70px;
       left: -300px;
@@ -139,6 +148,15 @@ const Container = styled.div`
     }
     .aboutMe {
       width: 445px;
+    }
+    button {
+      top: 531px;
+      left: 496px;
+      &:hover{
+        cursor: pointer;
+        background-color: #949393;
+        transition: 0.3s;
+      }
     }
     .circle {
       top: 390px;
