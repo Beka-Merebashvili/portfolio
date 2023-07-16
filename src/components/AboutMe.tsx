@@ -2,17 +2,16 @@ import SocialMedia from "./SocialMedia";
 import styled from "styled-components";
 import UnderLine from "../styled-components/UnderLine";
 import myPhoto from "../assets/images/my-photo.jpg";
-import circle from "../assets/images/pattern-circle.svg"
-import pattern from "../assets/images/pattern-rings.svg"
+import circle from "../assets/images/pattern-circle.svg";
+import pattern from "../assets/images/pattern-rings.svg";
 import { saveAs } from "file-saver";
 
 export default function AboutMe() {
   const handleDownload = () => {
-    const fileUrl = "./docs/Beka_Merebashvili.pdf";  
-    const fileName =  "Beka Merebasvhili";  
+    const fileUrl = "./docs/Beka_Merebashvili.pdf";
+    const fileName = "Beka Merebasvhili";
     saveAs(fileUrl, fileName);
   };
-
 
   return (
     <Container>
@@ -30,9 +29,7 @@ export default function AboutMe() {
         to life!
       </p>
       <UnderLine href="#1">contat me</UnderLine>
-      <button onClick={handleDownload}>
-      Download CV
-    </button>
+      <button onClick={handleDownload}>Download CV</button>
       <img className="circle" src={circle} alt="circle" />
       <img className="ring" src={pattern} alt="" />
     </Container>
@@ -93,8 +90,7 @@ const Container = styled.div`
     left: -370px;
   }
 
-
-  @media only screen and (min-width: 768px){
+  @media only screen and (min-width: 768px) {
     align-items: flex-start;
     padding-left: 32px;
     .imgBox {
@@ -128,9 +124,8 @@ const Container = styled.div`
     }
   }
 
-
   @media only screen and (min-width: 1440px) {
-    padding: 0 165px ;
+    padding: 0 165px;
     .imgBox {
       width: 445px;
       height: 720px;

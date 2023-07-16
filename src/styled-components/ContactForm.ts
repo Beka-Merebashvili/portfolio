@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const ContactForm = styled.form`
   display: flex;
@@ -64,6 +64,16 @@ const ContactForm = styled.form`
     }
     button {
       margin-left: 282px;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    button {
+      &:hover {
+        cursor: pointer;
+        color: #4ee1a0;
+        transition: 0.2s;
+      }
     }
   }
 `;

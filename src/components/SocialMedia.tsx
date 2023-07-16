@@ -6,17 +6,38 @@ import gmailIcon from "../assets/images/gmail.icon.svg";
 
 export default function SocialMedia() {
   const socialMediaLinks = [
-    { name: "GitHub", icon: githubIcon, url: "https://github.com/Beka-Merebashvili" },
-    { name: "Facebook", icon: facebookIcon, url: "https://www.facebook.com/beqa.merebashvili.73" },
-    { name: "LinkedIn", icon: linkedinIcon, url: "https://www.linkedin.com/in/beka-merebashvili/" },
-    { name: "Gmail", icon: gmailIcon, url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnZwjFRXWgwbvCgXPGGpbTKfsKqzNQRJbDSTRSLdLMTKSlZRNddhFPxtCvbcvTFLfVHQd" },
+    {
+      name: "GitHub",
+      icon: githubIcon,
+      url: "https://github.com/Beka-Merebashvili",
+    },
+    {
+      name: "Facebook",
+      icon: facebookIcon,
+      url: "https://www.facebook.com/beqa.merebashvili.73",
+    },
+    {
+      name: "LinkedIn",
+      icon: linkedinIcon,
+      url: "https://www.linkedin.com/in/beka-merebashvili/",
+    },
+    {
+      name: "Gmail",
+      icon: gmailIcon,
+      url: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnZwjFRXWgwbvCgXPGGpbTKfsKqzNQRJbDSTRSLdLMTKSlZRNddhFPxtCvbcvTFLfVHQd",
+    },
   ];
   return (
     <SocialNavigation>
       <h2>merebashvili</h2>
       <div className="navigation">
-      {socialMediaLinks.map((socialMedia, index) => (
-          <a key={index} href={socialMedia.url} target="_blank" rel="noopener noreferrer">
+        {socialMediaLinks.map((socialMedia, index) => (
+          <a
+            key={index}
+            href={socialMedia.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={socialMedia.icon} alt={socialMedia.name} />
           </a>
         ))}
@@ -26,41 +47,48 @@ export default function SocialMedia() {
 }
 
 const SocialNavigation = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0 22px 0;
- h2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 22px 0;
+  h2 {
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: -0.33px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
- }
- .navigation {
+  }
+  .navigation {
     display: flex;
     align-items: center;
     gap: 10px;
- }
+  }
 
- @media only screen and (min-width: 768px){
-  width: 92%;
-  flex-direction: row;
-  justify-content: space-between;
-  h2 {
-    font-size: 32px;
-    letter-spacing: -0.44px;
+  @media only screen and (min-width: 768px) {
+    width: 92%;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      font-size: 32px;
+      letter-spacing: -0.44px;
+    }
+    .navigation {
+      gap: 16px;
+    }
   }
-  .navigation {
-    gap: 16px;
-  }
- }
 
- @media only screen and (min-width: 1440px) {
-  .navigation {
-    gap: 24px;
+  @media only screen and (min-width: 1440px) {
+    .navigation {
+      gap: 24px;
+    }
+    img {
+      &:hover {
+        filter: invert(83%) sepia(25%) saturate(542%) hue-rotate(98deg)
+          brightness(184%) contrast(102%);
+        transition: 0.3s;
+      }
+    }
   }
- }
-`
+`;
