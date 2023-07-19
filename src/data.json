@@ -2,42 +2,42 @@
   {
     "img": "./images/Github-user-search-app-preview.jpg",
     "title": "Github user search app",
-    "lenguages": "react  typescript restapi",
+    "lenguages": "React  Typescript Restapi",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Github-user-search-app",
     "liveUrl" : "https://github-user-search-app-coral.vercel.app"
   } ,
   {
     "img": "./images/Clock-app-preview.jpg",
     "title": "Clock app",
-    "lenguages": "react  typescript restapi",
+    "lenguages": "React  Typecript Restapi",
     "repoUrl" : "https://github.com/Beka-Merebashvili/clock-app",
     "liveUrl" : "https://clock-app-teal.vercel.app"
   } ,
   {
     "img": "./images/Interactive-card-details-form-prewiew.jpeg",
     "title": "Interactive card details form",
-    "lenguages": "react  styled-components",
+    "lenguages": "React  Styled-Components",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Interactive-card-details-form",
     "liveUrl" : "https://interactive-card-details-form-olive-alpha.vercel.app"
   },
   {
     "img": "./images/Intro-component-with-sign-up-form-preview.jpg",
     "title": " Sign up form",
-    "lenguages": "react  styled-components",
+    "lenguages": "React  Styled-Components",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Intro-component-with-sign-up-form",
     "liveUrl" : "https://intro-component-with-sign-up-form-lyart.vercel.app"
   },
   {
     "img": "./images/Interactive-rating-component-preview.jpg",
     "title": "Interactive rating component",
-    "lenguages": "react  styled-components",
+    "lenguages": "React  Styled-Components",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Interactive-rating-component",
     "liveUrl" : "https://interactive-rating-component-ten-gules.vercel.app"
   },
   {
     "img": "./images/Tip-calculator-preview.jpg",
     "title": "Tip-calculatort",
-    "lenguages": "html css javascript",
+    "lenguages": "Html Css Javascript",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Tip-calculator",
     "liveUrl" : "https://beka-merebashvili.github.io/Tip-calculator/"
   }
