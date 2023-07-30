@@ -9,7 +9,7 @@ import { saveAs } from "file-saver";
 
 export default function AboutMe() {
   const handleDownload = () => {
-    const fileUrl = "./docs/Beka_Merebashvili.pdf";
+    const fileUrl = "./docs/Beka-Merebashvili.pdf";
     const fileName = "Beka Merebasvhili";
     saveAs(fileUrl, fileName);
   };
