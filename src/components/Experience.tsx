@@ -3,12 +3,12 @@ import pattern from "../assets/images/pattern-rings.svg"
 
 export default function Experience() {
   const experience = [
-    { title: "HTML", info: "2 Years Experience" },
-    { title: "CSS", info: "2 Years Experience" },
+    { title: "HTML / CSS", info: "2 Years Experience" },
+    { title: "Tailwind CSS", info: "1.5 Years Experience" },
     { title: "Javascript", info: "1.5 Years Experience" },
     { title: "React", info: "1 Year Experience" },
+    { title: "Next.js", info: "1 Year Experience" },
     { title: "Typescript", info: "1 Year Experience" },
-    { title: " REST API ", info: "1 Year Experience" },
   ];
 
   return (
@@ -78,13 +78,11 @@ const StyledDiv = styled.div`
   }
 
   @media only screen and (min-width: 768px) {
-    /* align-items: flex-start;
-    padding-left: 32px; */
      .experienceWrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-wrap: wrap;
-      width: 530px;
+      width: 720px;
      }
      .wrapper {
       align-items: flex-start;
@@ -110,7 +108,8 @@ const StyledDiv = styled.div`
 
   @media only screen and (min-width: 1440px) {
     .experienceWrapper {
-      width: 678px;
+      justify-content: space-between;
+      width: 900px;
     }
     .line {
       width: 80%;
