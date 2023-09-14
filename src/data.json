@@ -21,18 +21,18 @@
     "liveUrl" : "https://calculator-wine-tau.vercel.app"
   },
   {
-    "img": "./images/Intro-component-with-sign-up-form-preview.jpg",
-    "title": " Sign up form",
-    "lenguages": "React , Styled-Components",
-    "repoUrl" : "https://github.com/Beka-Merebashvili/Intro-component-with-sign-up-form",
-    "liveUrl" : "https://intro-component-with-sign-up-form-lyart.vercel.app"
-  },
-  {
     "img": "./images/Interactive-card-details-form-prewiew.jpeg",
     "title": "Interactive card details form",
     "lenguages": "React , Styled-Components",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Interactive-card-details-form",
     "liveUrl" : "https://interactive-card-details-form-olive-alpha.vercel.app"
+  },
+  {
+    "img": "./images/sphere.png",
+    "title": "Sphere",
+    "lenguages": "Three.js",
+    "repoUrl" : "https://github.com/Beka-Merebashvili/sphere",
+    "liveUrl" : "https://sphere-bice.vercel.app"
   },
   {
     "img": "./images/Tip-calculator-preview.jpg",
