@@ -14,6 +14,13 @@
     "liveUrl" : "https://clock-app-teal.vercel.app"
   } ,
   {
+    "img": "./images/crypto-table-img.png",
+    "title": "Crypto table",
+    "lenguages": "React , Typescript , Rest Api,",
+    "repoUrl" : "https://github.com/Beka-Merebashvili/sphere",
+    "liveUrl" : "https://sphere-bice.vercel.app"
+  },
+  {
     "img": "./images/calculator.png",
     "title": "Calculator App",
     "lenguages": "React , Styled-Components",
@@ -26,13 +33,6 @@
     "lenguages": "React , Styled-Components",
     "repoUrl" : "https://github.com/Beka-Merebashvili/Interactive-card-details-form",
     "liveUrl" : "https://interactive-card-details-form-olive-alpha.vercel.app"
-  },
-  {
-    "img": "./images/sphere.png",
-    "title": "Sphere",
-    "lenguages": "Three.js",
-    "repoUrl" : "https://github.com/Beka-Merebashvili/sphere",
-    "liveUrl" : "https://sphere-bice.vercel.app"
   },
   {
     "img": "./images/Tip-calculator-preview.jpg",
