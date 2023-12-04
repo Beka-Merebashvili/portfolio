@@ -16,7 +16,7 @@
   {
     "img": "./images/crypto-table-img.png",
     "title": "Crypto table",
-    "lenguages": "React , Typescript , Rest Api,",
+    "lenguages": "React , Typescript , Rest Api",
     "repoUrl" : "https://github.com/Beka-Merebashvili/sphere",
     "liveUrl" : "https://sphere-bice.vercel.app"
   },
